@@ -24,3 +24,40 @@ class Library {
 interface Readble{
     void read();
 }
+
+
+
+class Book{
+    String title;
+    String author;
+    String isbn;
+
+    public Book(String title, String author, String isbn){
+        this.title = title;
+        this.author = author;
+        this.isbn = isbn;
+    }
+
+
+    public String getinfo(){
+        return title + " " + author + " " + isbn;
+
+    }
+
+}
+
+class EBook extends Book{
+    String title;
+    String author;
+    String isbn;
+
+    public EBook(String title, String author, String isbn){
+        super(title, author, isbn);
+
+    }
+
+    public String getinfo(){
+        return title + " " + author + " " + isbn;
+    }
+
+}
